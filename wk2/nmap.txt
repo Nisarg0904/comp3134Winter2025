@@ -1,0 +1,33 @@
+root@comp3134Winter2025:~# nmap duolingo.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-01-17 22:50 UTC
+Nmap scan report for duolingo.com (54.165.40.136)
+Host is up (0.018s latency).
+rDNS record for 54.165.40.136: ec2-54-165-40-136.compute-1.amazonaws.com
+Not shown: 998 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 4.66 seconds
+root@comp3134Winter2025:~# nmap -p 3000 duolingo.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-01-17 22:51 UTC
+Nmap scan report for duolingo.com (54.165.40.136)
+Host is up (0.020s latency).
+rDNS record for 54.165.40.136: ec2-54-165-40-136.compute-1.amazonaws.com
+
+PORT     STATE    SERVICE
+3000/tcp filtered ppp
+
+Nmap done: 1 IP address (1 host up) scanned in 0.26 seconds
+root@comp3134Winter2025:~# nmap -p 80-9000 duolingo.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2025-01-17 22:52 UTC
+Nmap scan report for duolingo.com (54.165.40.136)
+Host is up (0.019s latency).
+rDNS record for 54.165.40.136: ec2-54-165-40-136.compute-1.amazonaws.com
+Not shown: 8919 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 22.37 seconds
+root@comp3134Winter2025:~#

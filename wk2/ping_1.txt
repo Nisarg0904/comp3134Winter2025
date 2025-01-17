@@ -1,0 +1,32 @@
+root@comp3134Winter2025:~# ping google.com
+PING google.com (172.217.165.14) 56(84) bytes of data.
+64 bytes from yyz12s06-in-f14.1e100.net (172.217.165.14): icmp_seq=1 ttl=59 time=2.30 ms
+64 bytes from yyz12s06-in-f14.1e100.net (172.217.165.14): icmp_seq=2 ttl=59 time=1.34 ms
+64 bytes from yyz12s06-in-f14.1e100.net (172.217.165.14): icmp_seq=3 ttl=59 time=1.48 ms
+64 bytes from yyz12s06-in-f14.1e100.net (172.217.165.14): icmp_seq=4 ttl=59 time=1.33 ms
+64 bytes from yyz12s06-in-f14.1e100.net (172.217.165.14): icmp_seq=5 ttl=59 time=1.36 ms
+64 bytes from yyz12s06-in-f14.1e100.net (172.217.165.14): icmp_seq=6 ttl=59 time=1.47 ms
+64 bytes from yyz12s06-in-f14.1e100.net (172.217.165.14): icmp_seq=7 ttl=59 time=1.34 ms
+64 bytes from yyz12s06-in-f14.1e100.net (172.217.165.14): icmp_seq=8 ttl=59 time=1.29 ms
+64 bytes from yyz12s06-in-f14.1e100.net (172.217.165.14): icmp_seq=9 ttl=59 time=1.30 ms
+64 bytes from yyz12s06-in-f14.1e100.net (172.217.165.14): icmp_seq=10 ttl=59 time=1.40 ms
+64 bytes from yyz12s06-in-f14.1e100.net (172.217.165.14): icmp_seq=11 ttl=59 time=1.33 ms
+^C
+--- google.com ping statistics ---
+11 packets transmitted, 11 received, 0% packet loss, time 10013ms
+rtt min/avg/max/mdev = 1.287/1.448/2.300/0.275 ms
+
+
+
+
+root@comp3134Winter2025:~# ping google.com -w 5
+PING google.com (172.217.165.14) 56(84) bytes of data.
+64 bytes from yyz12s06-in-f14.1e100.net (172.217.165.14): icmp_seq=1 ttl=59 time=2.14 ms
+64 bytes from yyz12s06-in-f14.1e100.net (172.217.165.14): icmp_seq=2 ttl=59 time=1.34 ms
+64 bytes from yyz12s06-in-f14.1e100.net (172.217.165.14): icmp_seq=3 ttl=59 time=1.35 ms
+64 bytes from yyz12s06-in-f14.1e100.net (172.217.165.14): icmp_seq=4 ttl=59 time=1.34 ms
+64 bytes from yyz12s06-in-f14.1e100.net (172.217.165.14): icmp_seq=5 ttl=59 time=1.33 ms
+
+--- google.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4006ms
+rtt min/avg/max/mdev = 1.329/1.499/2.139/0.319 ms
